@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Experience — Arihant Jain</title>
+  <meta name="description" content="Arihant Jain — professional and research experience at Amazon and the Indian Institute of Science (IISc).">
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+  <!-- ===================== TOP NAV ===================== -->
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <a class="nav-name" href="index.html">Arihant Jain</a>
+      <div class="nav-links">
+        <a href="index.html">About</a>
+        <a href="experience.html" class="active">Experience</a>
+        <a href="publications.html">Publications</a>
+        <a href="news.html">News</a>
+      </div>
+    </div>
+  </nav>
+
+<main>
+
+  <header class="page-head">
+    <h1>Experience</h1>
+  </header>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section id="experience">
+    <div class="entry">
+      <div class="entry-when">
+        <div class="when-date">2024 — Present</div>
+        <div class="when-role">Applied Scientist II</div>
+        <div class="when-org">Amazon — Returns &amp; Product Support Science</div>
+      </div>
+      <div class="entry-what">
+        <div class="subrole">
+          <h2 class="subrole-title">Video Frame Selection <span class="tag">(in progress)</span></h2>
+          <div class="phase">
+            <div class="phase-label">Invent</div>
+            <div class="phase-body">
+              <ul class="bullets">
+                <li>Designed a two-stage on-device frame-selection framework for VLM-based product matching: a query-agnostic summarizer to select diverse and high-quality frames, plus a domain-adapted relevance ranker fine-tuned on human-verified relevance labels.</li>
+                <li>End-to-end product-matching accuracy improved by +21.6pp at one frame and +13.0pp at three frames, beating the best of six recent baselines by +18.9pp.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="phase">
+            <div class="phase-label">Implement</div>
+            <div class="phase-body">
+              <ul class="bullets">
+                <li>Built a demo running the capability on a mobile device, then implemented it on Amazon's edge devices with no regressions.</li>
+                <li>Built a reusable library so anyone doing frame selection for their use case can adopt it with little effort, supporting all state-of-the-art approaches and VLM integrations.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="phase">
+            <div class="phase-label">Influence</div>
+            <div class="phase-body">
+              <ul class="bullets">
+                <li>Collaborated with partner teams to source and access the video data used to train and evaluate the framework.</li>
+                <li>Demoed the capability to the cross-org product team, who endorsed it and agreed to deploy it to the edge devices.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="subrole">
+          <h2 class="subrole-title">Brand Redirect <span class="tag">(in progress)</span></h2>
+          <div class="phase">
+            <div class="phase-label">Invent</div>
+            <div class="phase-body">
+              <ul class="bullets">
+                <li>Designing a brand–customer communication engine comprising fault attribution, conversation summarization, an input safeguarder, and next-step recommendations.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="phase">
+            <div class="phase-label">Implement</div>
+            <div class="phase-body">
+              <ul class="bullets">
+                <li>Built a Streamlit demo to gather feedback from different teams, and implemented the science changes into the tech codebase to integrate the science module, with guardrails to ensure safe responses.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="phase">
+            <div class="phase-label">Influence</div>
+            <div class="phase-body">
+              <ul class="bullets">
+                <li>Collaborating with the product and tech teams to shape the right experience by iterating over requirements and building capabilities to meet them.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="subrole">
+          <h2 class="subrole-title">Troubleshooting Chatbot</h2>
+          <div class="phase">
+            <div class="phase-label">Invent</div>
+            <div class="phase-body">
+              <ul class="bullets">
+                <li>Built an LLM-based multi-turn troubleshooting assistant, and designed <a href="https://aclanthology.org/2025.emnlp-industry.108/" target="_blank" rel="noopener">SMART</a> (a multilingual TOD framework) and <a href="https://aclanthology.org/2025.naacl-long.508/" target="_blank" rel="noopener">AutoEval-ToD</a> (LLM-based evaluation that simulates customer conversations to measure precision/recall at scale).</li>
+                <li>Curated a granular brand/product-variant knowledge store from external brand sites using LLMs (<a href="https://aclanthology.org/2025.acl-industry.69/" target="_blank" rel="noopener">AutoChunker</a>), with domain and regional safeguards (warranty-voiding actions, 120V/220V variations).</li>
+              </ul>
+            </div>
+          </div>
+          <div class="phase">
+            <div class="phase-label">Implement</div>
+            <div class="phase-body">
+              <ul class="bullets">
+                <li>Implemented the science functionality into the tech codebase and launched across 8 international stores, reaching $3.2MM annual program savings.</li>
+                <li>Integrated the knowledge store into Amazon's Rufus assistant (US), contributing $16.5MM annual program savings.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="phase">
+            <div class="phase-label">Influence</div>
+            <div class="phase-body">
+              <ul class="bullets">
+                <li>Demoed the POC to the product team to get alignment on the concept, and worked with product and tech teams to deploy the chatbot across multiple marketplaces.</li>
+                <li>Drove alignment with the platform tech team to build the web crawler needed to source troubleshooting content, and with product to finalize the 30+ product types for expansion.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-when">
+        <div class="when-date">2021 — 2024</div>
+        <div class="when-role">Applied Scientist</div>
+        <div class="when-org">Amazon — Recommendations &amp; Risk Science</div>
+      </div>
+      <div class="entry-what">
+        <div class="subrole">
+          <h2 class="subrole-title">Concession-Abuse Risk</h2>
+          <div class="phase">
+            <div class="phase-label">Invent</div>
+            <div class="phase-body">
+              <ul class="bullets">
+                <li>Built a graph-based concession-abuse risk model to flag abusive return/refund behavior, improving over existing baselines by developing the <a href="https://link.springer.com/chapter/10.1007/978-3-031-43427-3_12" target="_blank" rel="noopener">TRD-GNN</a> model.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="phase">
+            <div class="phase-label">Implement</div>
+            <div class="phase-body">
+              <ul class="bullets">
+                <li>Implemented the whole pipeline end to end and scaled the model to the US marketplace, reaching 90% rule precision in production ($10MM annual concession savings).</li>
+              </ul>
+            </div>
+          </div>
+          <div class="phase">
+            <div class="phase-label">Influence</div>
+            <div class="phase-body">
+              <ul class="bullets">
+                <li>Drove alignment with the US abuse-risk product team to deploy the model, benchmarking its performance against the existing models.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="subrole">
+          <h2 class="subrole-title">Product Recommendation</h2>
+          <div class="phase">
+            <div class="phase-label">Invent</div>
+            <div class="phase-body">
+              <ul class="bullets">
+                <li>Designed <a href="https://dl.acm.org/doi/10.1145/3627673.3680106" target="_blank" rel="noopener">MERLIN</a>, a GNN product-recommendation model with graph pre-training and dual embeddings for cold-start and co-purchase asymmetry.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="phase">
+            <div class="phase-label">Implement</div>
+            <div class="phase-body">
+              <ul class="bullets">
+                <li>Trained and launched the model against the production recommendation baseline, improving link-prediction AUC by 5%; the launch contributed +8 bps conversion and a 2.53% return-initiated-rate improvement ($18.4MM annualized program OPS).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESEARCH EXPERIENCE ===================== -->
+  <section id="research">
+    <div class="entry">
+      <div class="entry-when">
+        <div class="when-date">2019 — 2021</div>
+        <div class="when-role">M.Tech, Computational &amp; Data Science</div>
+        <div class="when-org">Indian Institute of Science (IISc) — <a href="https://val.cds.iisc.ac.in/people.html" target="_blank" rel="noopener">Vision &amp; AI Lab (VAL)</a></div>
+      </div>
+      <div class="entry-what">
+        <div class="subrole">
+          <h2 class="subrole-title">Domain Adaptation</h2>
+          <p>Advised by <a href="https://cds.iisc.ac.in/faculty/venky/" target="_blank" rel="noopener">Dr. R. Venkatesh Babu</a>.</p>
+          <ul class="bullets">
+            <li>Designed <a href="https://openaccess.thecvf.com/content/ICCV2021/html/Rangwani_S3VAADA_Submodular_Subset_Selection_for_Virtual_Adversarial_Active_Domain_Adaptation_ICCV_2021_paper.html" target="_blank" rel="noopener">S³VAADA</a>, an active domain-adaptation method using a submodular subset-selection criterion to label only the most informative target samples (ICCV 2021, thesis scored 10/10).</li>
+            <li>Co-developed <a href="https://arxiv.org/abs/2206.08213" target="_blank" rel="noopener">SDAT</a>, a smoothness-based domain-adversarial training procedure for classification and object detection (ICML 2022).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+</body>
+</html>
